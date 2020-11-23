@@ -40,7 +40,7 @@ The folder `experiments` contains main experiments of the project. Some parts of
 
 ## "No locks available" issue
 
-In case you get this error, pls set the `HDF5_USE_FILE_LOCKING` env var, for instance, at the beginning of your script:
+In case you get this error, you can set the `HDF5_USE_FILE_LOCKING` env var, for instance, at the beginning of your script:
 
 ```python
 import os
