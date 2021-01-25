@@ -1,4 +1,3 @@
-
 # DeepStyle
 
 **DeepStyle** provides pretrained models aiming to project text in a stylometric space. The base project consists in a new method of representation learning and a definition of writing style based on distributional properties. This repository contains datasets, pretrained models and other ressources that were used to train and test models.
@@ -51,5 +50,24 @@ os.environ['HDF5_USE_FILE_LOCKING'] = 'FALSE'
 
 	tensorflow-gpu==2.0.0
 	transformers==2.4.1
+	h5py==2.10.0
 
-With python 3.6, CUDA 10.0 and CUDNN 7.
+With python 3.6 and 3.7, CUDA 10.0 and CUDNN 7.
+
+## Test it using command lines
+
+Here a command line demo of DeepStyle on Ubuntu 20:
+
+	cd ~/tmp
+	mkdir dbert-ft
+	cd dbert-ft
+	wget http://212.129.44.40/DeepStyle/dbert-ft/config.json
+	wget http://212.129.44.40/DeepStyle/dbert-ft/tf_model.h5
+	cd ../
+	conda create -n dbertft-env -y python=3.7 anaconda
+	conda activate dbertft-env
+	git clone https://github.com/hayj/deepstyle ; cd deepstyle ; pip uninstall deepstyle -y ; python setup.py install ; cd ../ ; rm -rf deepstyle
+	pip install --ignore-installed --upgrade tensorflow==2.0.0
+	pip install --ignore-installed --upgrade transformers==2.4.1
+	pip install --ignore-installed --upgrade h5py==2.10.0
+	ipython -c "from deepstyle.model import DeepStyle ; m = DeepStyle('dbert-ft') ; m.embed('Hello World')"
