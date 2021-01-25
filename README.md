@@ -10,7 +10,7 @@ All datasets (the *R-set* and 22 main *U-sets*) as well as the pretrained *DBert
 ## Installation
 
 ```bash
-git clone https://github.com/anonym2020/deepstyle
+git clone https://github.com/hayj/deepstyle
 cd deepstyle
 python setup.py install
 ```
