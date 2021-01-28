@@ -54,7 +54,7 @@ os.environ['HDF5_USE_FILE_LOCKING'] = 'FALSE'
 
 With python 3.6 and 3.7, CUDA 10.0 and CUDNN 7.
 
-## Test it using command lines
+## Command line demo
 
 Here a command line demo of DeepStyle on Ubuntu 20:
 
