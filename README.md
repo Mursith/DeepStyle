@@ -71,3 +71,22 @@ Here a command line demo of DeepStyle on Ubuntu 20:
 	pip install --ignore-installed --upgrade transformers==2.4.1
 	pip install --ignore-installed --upgrade h5py==2.10.0
 	ipython -c "from deepstyle.model import DeepStyle ; m = DeepStyle('dbert-ft') ; m.embed('Hello World')"
+
+## Citation
+
+	Julien Hay, Bich-Liên Doan, Fabrice Popineau, et Ouassim Ait Elhara. Representation learning of writing style. In Proceedings of the 6th Workshop on Noisy User-generated Text (W-NUT 2020), November 2020.
+
+Bibtex format:
+
+	@inproceedings{hay-2020-deepstyle,
+	    title = "Representation learning of writing style",
+	    author = "Hay, Julien and
+	      Doan, Bich-Li\^{e}n and
+	      Popineau, Fabrice and
+	      Ait Elhara, Ouassim",
+	    booktitle = "Proceedings of the 6th Workshop on Noisy User-generated Text (W-NUT 2020)",
+	    month = nov,
+	    year = "2020"
+	}
+
+[Link to the publication](https://www.aclweb.org/anthology/2020.wnut-1.30.pdf)
